@@ -1,7 +1,7 @@
 ﻿using Secret;
 using System.Reflection;
 
-class MainClass
+internal class Program
 {
     public static void Main(string[] args)
     {
@@ -19,10 +19,4 @@ class MainClass
             Console.WriteLine(field.GetValue(keeper));
         }
     }
-}
-
-class HasASecret
-{
-    // Does the private keyword make this field secure? No
-    private string secret = "xyzzy";
 }
